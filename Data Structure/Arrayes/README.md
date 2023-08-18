@@ -1,5 +1,9 @@
 # Arrayes
 ```cpp
+char[] arr = {'a', 'b', 'c'};
+```
+
+```cpp
 Scanner input = new Scanner(System.in);
 
 int [] arr = new int[5];
