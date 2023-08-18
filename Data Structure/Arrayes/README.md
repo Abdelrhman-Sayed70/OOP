@@ -38,8 +38,8 @@ public class Main {
         System.out.println("First Arr: ");
         printArray(arr);
 
-        System.out.println("\nSecond Arr: ");
         int[] returnedArray = getArray();
+        System.out.println("\nSecond Arr: ");
         for(int i : returnedArray)
             System.out.print(i + " ");
     }
