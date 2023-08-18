@@ -5,30 +5,15 @@
 - Known at `compile time`
 
 ```java
-import java.util.Scanner;
-import static java.lang.Math.max;
+static int add(int a, int b){
+    return a + b;
+}
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+static float add(float a, float b){
+    return a + b;
+}
 
-        int x = input.nextInt();
-        int y = input.nextInt();
-        int z = input.nextInt();
-
-        System.out.println(add(x,y,z));
-    }
-
-    static int add(int a, int b){
-        return a + b;
-    }
-
-    static float add(float a, float b){
-        return a + b;
-    }
-
-    static int add (int a, int b, int c) {
-        return a + b + c;
-    }
+static int add (int a, int b, int c) {
+    return a + b + c;
 }
 ```
