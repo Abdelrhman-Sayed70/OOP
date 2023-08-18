@@ -47,7 +47,10 @@ public class Main {
 ```
 ## Array assigned by reference
 ```cpp
-
+int []arr = new int[]{1,2,3};
+int []arr2 = arr; // arr2 refers to the same location of arr 1 [reference]
+arr2[0] = 5;
+System.out.println(arr[0]); //5
 ```
 ## Arrays are passed by reference
 ```cpp
