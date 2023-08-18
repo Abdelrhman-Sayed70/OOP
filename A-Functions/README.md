@@ -1,3 +1,13 @@
+## Method Prototype & Signature
+**`Method Signature`**
+- Method name
+- Parameter list
+
+**`Method Prototype`**
+- Return type
+- Method name
+- Parameter list
+
 ## Function Components
 - **Function prototype** → return type, function name, function params
 - **Function body** → function logic
