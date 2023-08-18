@@ -19,7 +19,7 @@ static int add (int a, int b, int c) {
 ```
 
 ## Can we override the main function?
-`yes`
+`yes` any function can be overriden
 ```cpp
 public static void main(int n) {
     System.out.println(n);
