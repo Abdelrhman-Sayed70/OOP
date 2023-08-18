@@ -9,3 +9,17 @@
 ## Parameters vs Arguments
 - Parameters → used in the prototype of the function
 - Arguments → used when invoking the function
+
+## Static Function
+**`Function called without using object`**
+```java
+public class Main {
+    public static void main(String[] args) {
+        myMethod();
+    }
+
+    static void myMethod(){
+        System.out.println("this is a method");
+    }
+}
+```
