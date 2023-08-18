@@ -45,3 +45,18 @@ public class Main {
     }
 }
 ```
+## Array assigned by reference
+```cpp
+
+```
+## Arrays are passed by reference
+```cpp
+static void updateArray(int []arr){
+    arr[0] = 5;
+}
+public static void main(String[] args) {
+    int []arr = new int[]{1,2,3};
+    updateArray(arr); // updating by reference
+    System.out.println(arr[0]); // 5
+}
+```
