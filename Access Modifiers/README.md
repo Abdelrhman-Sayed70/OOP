@@ -1,6 +1,6 @@
 # Access Modifiers
 
-## `Classes `
+## `Classes`
 - **`Public`** 	The class is accessible by any other class in the program.
 - **`Default`** The class is only accessible by classes in the same package.
 
