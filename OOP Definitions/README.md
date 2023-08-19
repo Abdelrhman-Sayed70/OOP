@@ -16,3 +16,28 @@ A technique used in oop to hide internal object details [data members] which don
 Mechanism of wrapping data (variables). done by
 - declare class variables/attributes as `private`
 - provide public get and set methods to `access` and `update` the value of a private variable
+```cpp
+package mainpackage;
+
+public class Car {
+    private String name;
+    private int maxSpeed;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+}
+
+```
