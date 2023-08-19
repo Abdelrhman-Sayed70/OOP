@@ -10,3 +10,12 @@
 - **`Default`** The code is only accessible in the *same package*.
 - **`Protected`** The code is accessible in the *same package* and *subclasses*. 
 
+# Non Access Modifiers
+## `Classes`
+- **`final`** The class cannot be inherited
+- **`abstract`** The class cannot be used to create objects (To access an abstract class, it must be inherited from another class.)
+
+## `Attributes` `Methods`
+- **`final`** Attributes and methods cannot be overridden/modified
+- **`static`** Attributes and methods belongs to the class, rather than an object
+- **`abstract`** Can only be used in an abstract class
