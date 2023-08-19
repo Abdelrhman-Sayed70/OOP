@@ -17,5 +17,5 @@
 
 ## `Attributes` `Methods`
 - **`final`** Attributes and methods cannot be overridden/modified
-- **`static`** Attributes and methods belongs to the class, rather than an object
+- **`static`** Attributes and methods belongs to the class, rather than an object. Can be called using class name
 - **`abstract`** Can only be used in an abstract class
