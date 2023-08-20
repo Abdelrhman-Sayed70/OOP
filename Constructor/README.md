@@ -4,12 +4,14 @@
 - All classes have constructors by default: if you do not create a class constructor yourself, Java creates one for you.
 
 ## Creating Constructor Rules
-- It's name is the same of class name
+- Its name is the same as the class name
 - Can not have a return type
 - Must has `public` access modifier
 
 ## Constructor Types
 - Default constructor
+
+- Copy Constructor
 
 - No arg constructor
 
@@ -66,9 +68,28 @@ public class Product {
 ```
 
 
+## Copy Constructor
+The constructor takes an object as an argument
+
+```cpp
+public Product(String name, float price, String color) {
+    this.name = name;
+    this.price = price;
+    this.color = color;
+}
+
+public Product(Product product){
+    this(product.name, product.price, product.color);
+}
+```
+
+```java
+Product product = new Product("camera", 100, "red", 5);
+Product product1 = new Product(product);
+```
+
 ## Notes
 - Any object call **`only one`** constructor
 - 1 class can have more than 1 constructor with different signature `overloading`
 - A constructor can call another constructor using `this` keyword `Constructor chaining`
-
 
