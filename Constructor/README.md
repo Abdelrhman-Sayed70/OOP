@@ -35,7 +35,36 @@ public Product(){
 }
 ```
 
-## 
+## Constructor Chaining
+The constructor calls another constructor in the same class using `this` keywords
+
+```java
+package mainpackage;
+
+public class Product {
+    private String name;
+    private float price;
+    private String color;
+    private int quantity; // added recently
+
+    public Product(){
+        
+    }
+
+    public Product(String name, float price, String color) {
+        this.name = name;
+        this.price = price;
+        this.color = color;
+    }
+
+    // added to set quantity
+    public Product(String name, float price, String color, int quantity) {
+        this(name, price, color); // constructor chaining
+        this.quantity = quantity;
+    }
+}
+```
+
 
 ## Notes
 - Any object call **`only one`** constructor
