@@ -69,6 +69,6 @@ public class Product {
 ## Notes
 - Any object call **`only one`** constructor
 - 1 class can have more than 1 constructor with different signature `overloading`
-- A constructor can call another constructor using `this` keyword
+- A constructor can call another constructor using `this` keyword `Constructor chaining`
 
 
