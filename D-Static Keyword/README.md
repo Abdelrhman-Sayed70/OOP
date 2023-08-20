@@ -21,7 +21,7 @@ public class Student {
 }
 ```
 
-# Static Method
+## Static Method
 called using the class name. no need for object
 
 
