@@ -26,6 +26,7 @@ public Product(){
 }
 ```
 
+
 `Default Overriden constructor`
 ```java
 public Product(){
@@ -34,9 +35,11 @@ public Product(){
 }
 ```
 
+## 
+
 ## Notes
 - Any object call **`only one`** constructor
-- Any class has a default constructor with no arguments  created by Java which can be overridden
-- Any attribute that does not be initialized by the constructor will take its default value. `String -> Null` `int -> 0`
 - 1 class can have more than 1 constructor with different signature `overloading`
-- 
+- A constructor can call another constructor using `this` keyword
+
+
