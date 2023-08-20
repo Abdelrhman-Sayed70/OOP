@@ -1,4 +1,5 @@
-# Static Variable
+# Static Modifier
+## Static Variable
 - Property will be shared for all objects
 - Stored in memory only `once` not for all objects
 - Called using class name
@@ -55,4 +56,4 @@ public class Main {
 ## Static Class
 - it is a class defined inside another class
 - Can not be a class with static keyword except inner [nested] class [class inside a class]
-- Increase Encapsulation concept & securety 
+- Increase Encapsulation concept & security 
