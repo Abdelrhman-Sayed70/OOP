@@ -10,9 +10,14 @@
 
 ![image](https://github.com/Abdelrhman-Sayed70/OOP/assets/99830416/72084f0f-6582-43b7-8724-8481b0d82f91)
 
-
+## Relationship between child & parent class
+`IS-A relationship`
+**Developer IS-A Employee**
 
 ## Specialization & Generalization
 if we have an `employee` class & `developer` class which extends the `employee` class
 - `Specialization`: object created from child class is **specialized** object
 - `Generalization`: object created from parent class is **generalized** object
+
+## Protected Access Modifier
+**Protected access modifier used in parent class, so the attributes are visible in the super, child class, and all package classes**
