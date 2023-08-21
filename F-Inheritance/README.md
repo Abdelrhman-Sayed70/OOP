@@ -17,7 +17,65 @@
 ## Specialization & Generalization
 if we have an `employee` class & `developer` class which extends the `employee` class
 - `Specialization`: object created from child class is **specialized** object
-- `Generalization`: object created from parent class is **generalized** object
+- `Generalization`: object created from the parent class is **generalized** object
 
 ## Protected Access Modifier
 **Protected access modifier used in parent class, so the attributes are visible in the super, child class, and all package classes**
+
+## Constructors
+- any sub-class constructor **MUST** call **ONLY** one of superclass constructors
+- we can call parent constructor from sub-classes using `super` keyword at the first line of the sub-class constructor
+- or the default [no-arg] constructor will be invoked automatically If you do not invoke any
+
+```java
+public class Employee {
+    private String name;
+    private String email;
+    private String phone;
+    private String department;
+    private String address;
+    int birthDate;
+
+    public Employee(){
+        System.out.println("Parent No-arg constructor");
+    }
+
+    public Employee(String name, String email, String phone, String department, String address, int birthDate) {
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+        this.department = department;
+        this.address = address;
+        this.birthDate = birthDate;
+        System.out.println("Parent arg constructor");
+    }
+}
+```
+
+```java
+public class Developer extends Employee{
+    String projectName;
+
+    public Developer(String projectName) {
+        this.projectName = projectName;
+        // Parent no-arg constructor will be invoked automatically -> super();
+    }
+
+    public Developer(String name, String email, String phone, String department, String address, int birthDate, String projectName) {
+        super(name, email, phone, department, address, birthDate); // Parent constructor is invoked
+        this.projectName = projectName;
+    }
+}
+```
+
+```java
+public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+
+    // Parent No-arg constructor
+    Developer developer = new Developer("MRG");
+
+    // Parent arg constructor
+    Developer developer1 = new Developer("ahmed", "se", "011", "cs", "cairo", 2001, "VCS");
+}
+```
