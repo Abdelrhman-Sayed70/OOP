@@ -11,7 +11,8 @@
 - single action in different ways
 
 ## Method Overriding
-**run time** polymorphism [dynamic or late binding] polymorphism
+- **run time** polymorphism [dynamic or late binding] polymorphism
+- Called run time as JVM doesn't know which function will invoke until creating a space in memory
 
 **`Rules for method overriding`** 
 - There must be an inheritance relationship
