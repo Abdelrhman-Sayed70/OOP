@@ -137,4 +137,7 @@ Employee salariedEmployee = new SalariedEmployee("ahmed", 1000, 200);
 
 
 ## [Interview Question] Can we override the static method?
+No it can not be overridden
+```java
 
+```
