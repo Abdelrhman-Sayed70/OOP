@@ -84,8 +84,8 @@ public static void main(String[] args) {
 ## Any class extends the object class
 object class is the parent of any created class which has some methods like
 
-- String hashCode = obj.toString() which gets the has code of the object [helps JVM when searching about this object]
-- obj.getClass() return the class of the object
+- `String hashCode = obj.toString()` which gets the has code of the object [helps JVM when searching about this object]
+- `obj.getClass()` return the class of the object
 
 ```java
 package mainpackage;
@@ -106,3 +106,4 @@ class Car{
 
 }
 ```
+any of those methods can be overridden in the created class [cub-class]
