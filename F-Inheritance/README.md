@@ -79,3 +79,30 @@ public static void main(String[] args) {
     Developer developer1 = new Developer("ahmed", "se", "011", "cs", "cairo", 2001, "VCS");
 }
 ```
+
+
+## Any class extends the object class
+object class is the parent of any created class which has some methods like
+
+- String hashCode = obj.toString() which gets the has code of the object [helps JVM when searching about this object]
+- obj.getClass() return the class of the object
+
+```java
+package mainpackage;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        Car car = new Car();
+        System.out.println(car.toString()); // mainpackage.Car@50040f0c
+        System.out.println(car.getClass()); // class mainpackage.Car
+    }
+}
+
+class Car{
+
+}
+```
