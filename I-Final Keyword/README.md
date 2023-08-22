@@ -8,11 +8,7 @@ it is `non-access modifier` which can be used for
 ## `Final Variable`
 - no modification for this variable more
 - known at compile time
-```java
-final int STUDENT_ID = 1;
-```
-
-**For the final field in the class, all constructors must have this field to set**
+- set in all class constructors
 ```java
 public class Student {
     final int STUDENT_ID;
@@ -35,4 +31,9 @@ public class Student {
 - can't be set in the constructor
 ```java
 final static float DEGREE_OF_SUCCESS = 50;
+
+// or
+static {
+    DEGREE_OD_SUCCESS = 50
+}
 ```
