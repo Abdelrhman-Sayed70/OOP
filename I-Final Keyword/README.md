@@ -64,7 +64,7 @@ final public void getInfo(){
 
 
 ## Final Reference
-- Can not change the reference in memory
+**Can not change the reference in memory**
 ```java
 final Student student = new Student(1, "ahmed");
 student = new Student(2, "gaber"); // ERROR
