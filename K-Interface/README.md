@@ -1,6 +1,6 @@
 # Interface
 - **`Contract`**
-- A list of method signatures (abstract methods) without abstract keyword, default methods [concrete], static methods [concret]
+- A list of method signatures (abstract methods) without abstract keyword, default methods [concrete], static methods [concret], private [concrete]
 - Enhance security and code privacy which the implementation can done using APIs
 - Class implements all Interface abstract methods
 - Interface can extend more than one Interface
@@ -81,13 +81,17 @@ public class Main {
     }
 }
 ```
-
+## Interface Concrete Methods [with body]
+- Default methods
+- Static methods
+- Private methods
 
 ## Default Method
 - The interface can contain concrete methods with the default keyword [WHY ?]
 - To avoid problems of all implementor classes when adding new methods.
 - This method can be overridden in the implementor classes with a public access modifier
 - `This decreases abstraction`
+
 ```java
 public interface SelfDrivable {
     void destination(String destination);
@@ -105,12 +109,12 @@ public void defaultMethod(){
 }
 ```
 
-## 2 Interfaces contain methods with the same signature
+## 2 Interfaces Contain Methods with The Same Signature
 - **Error at implementor classes to avoid `diamond problem`**
 - class implements 2 methods with the same signature
 
 
-## Class has high priority than interface
+## Class Has High Priority Than Interface
 ```java
 public interface MyInterface {
     static void print(){
