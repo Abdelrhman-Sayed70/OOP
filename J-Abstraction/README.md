@@ -12,7 +12,11 @@
 - Abstract class can not be instantiated [can not define an object from it]
 - Could contain abstract methods [methods with no implementation], non-abstract (concrete) methods `[partial abstraction]`
 - Abstract method also can contain final methods and static methods
-- Also it can contain constructors [Usage ?]
+- Also it can contain constructors [Usage ?] useful for child classes
 - This class must be inherited and the children MUST implement all abstract methods [convert abstract method to concert methods].
 - So the child class now are `concrete class` [class in which all of its methods are implemented]
-- note: non-abstract class can not have an abstract method
+- Non-abstract class can not have an abstract method
+- There are no abstract variables
+- Constructor can not have abstract keyword
+- The method `CAN'T` be static and abstract at the same time, as static method can't be overridden
+- Can't add `abstract` to `private` method or class, as they will be forbidden to access them in child then we cannot override it
