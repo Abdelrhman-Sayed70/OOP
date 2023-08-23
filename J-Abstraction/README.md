@@ -93,3 +93,26 @@ public abstract class SUVAutopilot extends Car{
     abstract void parkingSensors();
 }
 ```
+
+
+## Upcasting
+Reusability, assume you want to create functions that accept an object of each child, you can only create one function of the parent class and pass any child of this parent
+```java
+public class Main {
+    public static void fun(Car car){
+        car.autopilot();
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        Hatchback puerHatchback = new Hatchback();
+        SUV puerSUV = new SUV();
+        Car hatchbackCar = new Hatchback();
+
+        fun(puerHatchback); //  Hatchback autopilot
+        fun(puerSUV); // SUV autopilot
+        fun(hatchbackCar); // Hatchback autopilot
+    }
+}
+```
