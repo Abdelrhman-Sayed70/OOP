@@ -29,7 +29,7 @@ public interface SelfDrivable {
 ```
 ```java
 public class CarV1 implements Movable, SelfDrivable{
-    protected  int x;
+    protected int x;
     protected int y;
     protected int numberOfPassengers;
 
