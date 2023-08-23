@@ -1,8 +1,8 @@
 # Interface
 - **`Contract`**
-- A list of method signatures (abstract methods) without abstract keyword
+- A list of method signatures (abstract methods) without abstract keyword, default methods
 - Enhance security and code privacy which the implementation can done using APIs
-- Class implements all Interface methods
+- Class implements all Interface abstract methods
 - Interface can extend more than one Interface
 - Can be used to achieve multiple inheritances in Java as a class can implement more than one interface
 - Naming Convention. end with `able` or start with `Can` [Movable or CanMove]
@@ -80,4 +80,14 @@ public class Main {
         carV1.drive();
     }
 }
+```
+
+
+## Default Method
+- The interface can contain concrete methods with the default keyword [WHY ?]
+- To avoid problems of all implementor classes when adding new methods.
+- This method can be overridden with a public access modifier
+- `This decreases abstraction`
+```java
+
 ```
