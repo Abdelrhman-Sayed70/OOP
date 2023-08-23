@@ -22,16 +22,12 @@ public interface Movable {
 }
 ```
 ```java
-package mainpackage;
-
 public interface SelfDrivable {
     void destination(String destination);
     void drive();
 }
 ```
 ```java
-package mainpackage;
-
 public class CarV1 implements Movable, SelfDrivable{
     protected  int x;
     protected int y;
