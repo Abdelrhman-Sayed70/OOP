@@ -1,0 +1,10 @@
+# Interface
+- **`Contract`**
+- A list of method signatures (abstract methods) without abstract keyword
+- Class implements all Interface methods
+- Interface extends Interface
+- Can be used to achieve multiple inheritances in Java as a class can implement more than one interface
+- Naming Convention. end with `able` or start with `Can` [Movable or CanMove]
+- Any defined attribute in the interface defined automatically as `public` `static` `final`
+- Any defined method in the interface defined as `public` `abstract`
+- Interface can not have any constructor
