@@ -12,7 +12,6 @@
 - Can not declare instance from interface
 - We can use upcasting
 
-
 ```java
 public interface Movable {
     void moveUp();
@@ -81,6 +80,27 @@ public class Main {
     }
 }
 ```
+
+## Interface Attributes
+- **By default all attributes in the interface are `public` `static` `final`**
+- So we can put all variables that can take those properties
+
+```java
+public interface AppConstants {
+    String APP_NAME = "APP";
+    String LIGHT_MODE = "#FFF";
+    String DARK_MODE = "#222";
+}
+```
+**But we know that interface is a contract so its better to deal in it with methods, so it's better to create class for the above constants**
+```java
+public final class Constants {
+    public static final String APP_NAME = "APP";
+    public static final String LIGHT_MODE = "#FFF";
+    public static final String DARK_MODE = "#222";
+}
+```
+
 ## Interface Concrete Methods [with body]
 - Default methods
 - Static methods
