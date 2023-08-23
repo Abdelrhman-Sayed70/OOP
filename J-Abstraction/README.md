@@ -78,3 +78,18 @@ public class Hatchback extends Car{
     }
 }
 ```
+
+
+### **In case the inherited class will not override all methods, we can use the abstract keyword for this class**
+```java
+public abstract class SUVAutopilot extends Car{
+    @Override
+    public void autopilot(){
+        System.out.println("Specified SUVAutopilot");
+    }
+
+    abstract void streamingServices();
+
+    abstract void parkingSensors();
+}
+```
