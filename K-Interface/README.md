@@ -1,6 +1,7 @@
 # Interface
 - **`Contract`**
 - A list of method signatures (abstract methods) without abstract keyword
+- Enhance secuirety and code privacy which the implementation can done using APIs
 - Class implements all Interface methods
 - Interface extends Interface
 - Can be used to achieve multiple inheritances in Java as a class can implement more than one interface
