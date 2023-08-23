@@ -1,6 +1,6 @@
 # Interface
 - **`Contract`**
-- A list of method signatures (abstract methods) without abstract keyword, default methods
+- A list of method signatures (abstract methods) without abstract keyword, default methods [concrete], static methods [concret]
 - Enhance security and code privacy which the implementation can done using APIs
 - Class implements all Interface abstract methods
 - Interface can extend more than one Interface
@@ -103,4 +103,51 @@ public interface SelfDrivable {
 public void defaultMethod(){
     System.out.println("CarV1 Default");
 }
+```
+
+## 2 Interfaces contain methods with the same signature
+- **Error at implementor classes to avoid `diamond problem`**
+- class implements 2 methods with the same signature
+
+
+## Class has high priority than interface
+```java
+public interface MyInterface {
+    static void print(){
+        System.out.println("Interface");
+    }
+}
+```
+```java
+public class MyClass {
+    public MyClass(){
+        System.out.println("Parent Class Constructor");
+    }
+
+    public void print(){
+        System.out.println("Class");
+    }
+}
+```
+```java
+public class MagicClass extends MyClass implements MyInterface{
+    public MagicClass(){
+        System.out.println("Magic Class Constructor");
+    }
+}
+```
+```java
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        MagicClass magicClass = new MagicClass();
+        magicClass.print();
+    }
+}
+```
+```
+Parent Class Constructor
+Magic Class Constructor
+Class
 ```
