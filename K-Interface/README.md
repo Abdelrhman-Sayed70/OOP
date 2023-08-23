@@ -86,8 +86,21 @@ public class Main {
 ## Default Method
 - The interface can contain concrete methods with the default keyword [WHY ?]
 - To avoid problems of all implementor classes when adding new methods.
-- This method can be overridden with a public access modifier
+- This method can be overridden in the implementor classes with a public access modifier
 - `This decreases abstraction`
 ```java
+public interface SelfDrivable {
+    void destination(String destination);
 
+    void drive();
+
+    default void defaultMethod(){
+        System.out.println("default method");
+    }
+}
+```
+```java
+public void defaultMethod(){
+    System.out.println("CarV1 Default");
+}
 ```
