@@ -4,13 +4,13 @@
 - Method Overriding
 
 
-## Method Overloading
+# Method Overloading
 - **compile time** polymorphism [static - early binding] polymorphism
 - allows the use of the same method with different signatures [parameter list types or numbers]
 - increase the reusability of the code
 - single action in different ways
 
-## Method Overriding
+# Method Overriding
 - **run time** polymorphism [dynamic or late binding] polymorphism
 - Called run time as JVM doesn't know which function will invoke until creating a space in memory
 
@@ -48,8 +48,8 @@ public class Main {
     }
 }
 ```
-
-## Upcasting
+---
+# Upcasting
 - **Change the object type to the child class**
 - Done when method override occurs
 - Object can access COMMON attributes & methods [overridden methods] only
@@ -58,9 +58,11 @@ public class Main {
 Parent obj = new Child(); // upcasting
 obj.print(); // Child
 ```
+## Usage
+Reusability, assume you want to create functions that accept an object of each child, you can only create one function of the parent class and pass any child of this parent
 
-
-## [Interview Question] Can we override the static method?
+---
+# [Interview Question] Can we override the static method?
 No, it can not be overridden
 ```java
 public class Parent {
