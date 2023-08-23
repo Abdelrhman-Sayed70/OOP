@@ -175,3 +175,16 @@ Parent Class Constructor
 Magic Class Constructor
 Class
 ```
+
+
+
+
+
+## Functional Interface
+**Interface contains single method**
+```java
+@FunctionalInterface
+public interface MyFunctionalInterface {
+    void singleMMethod();
+}
+```
