@@ -89,6 +89,8 @@ Product product1 = new Product(product);
 ```
 
 ## Notes
+- If the class has no constructor, Java will create the default constructor automatically [no arg constructor]
+- If you defined any other type of constructors (parameterized or copy); then the compiler will NOT provide any default constructors.
 - Any object call **`only one`** constructor
 - 1 class can have more than 1 constructor with different signature `overloading`
 - A constructor can call another constructor using `this` keyword `Constructor chaining`
