@@ -1,12 +1,12 @@
 # Static Modifier
-## Static Variable
+## Static Variable [Class Variable]
 - Property will be shared for all objects
 - Stored in memory only `once` not for all objects
 - Called using class name
 
-### System to create a unique id for each student
+### System to create a unique ID for each student
 ```java
- package mainpackage;
+package mainpackage;
 
 public class Student {
     private String name;
