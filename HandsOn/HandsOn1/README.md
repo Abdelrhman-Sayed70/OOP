@@ -38,8 +38,13 @@ public class Doctor {
 package medical;
 
 public class Clinic {
-    int clinicDoctorsCount = 3;
-    private Doctor []doctors = new Doctor[clinicDoctorsCount];
+    private int clinicDoctorsCount;
+    private Doctor []doctors;
+
+    public Clinic(int clinicDoctorsCount){
+        this.clinicDoctorsCount = clinicDoctorsCount;
+        doctors = new Doctor[clinicDoctorsCount];
+    }
 
     public void insertDoctor(Doctor doctor){
         int doctorNumber = Doctor.counter;
@@ -55,6 +60,14 @@ public class Clinic {
                 System.out.print(doctor.getName() + " ");
         }
     }
+
+    public int getClinicDoctorsCount() {
+        return clinicDoctorsCount;
+    }
+
+    public void setClinicDoctorsCount(int clinicDoctorsCount) {
+        this.clinicDoctorsCount = clinicDoctorsCount;
+    }
 }
 ```
 
@@ -67,10 +80,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        Clinic clinic = new Clinic();
-
-        // Enter clinic doctors data
         int numberOfDoctors = 3;
+        Clinic clinic = new Clinic(numberOfDoctors);
+
+        // Enter clinic doctors
         System.out.println("Taking doctors data...");
         for(int i = 1; i <= numberOfDoctors; i++){
             System.out.print("Enter doctor " + i + " name: ");
