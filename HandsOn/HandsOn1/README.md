@@ -69,7 +69,7 @@ public class Main {
 
         Clinic clinic = new Clinic();
 
-        // Enter clinic doctors
+        // Enter clinic doctors data
         int numberOfDoctors = 3;
         System.out.println("Taking doctors data...");
         for(int i = 1; i <= numberOfDoctors; i++){
