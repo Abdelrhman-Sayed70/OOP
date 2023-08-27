@@ -7,5 +7,85 @@
 
 ## Solution
 ```java
+package medical;
 
+public class Doctor {
+    private  final String name;
+    private String workingDay;
+    public static int counter = 0;
+
+    public Doctor(String name, String workingDay) {
+        this.name = name;
+        this.workingDay = workingDay;
+        counter++;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getWorkingDay() {
+        return workingDay;
+    }
+
+    public void setWorkingDay(String workingDay) {
+        this.workingDay = workingDay;
+    }
+}
+```
+
+```java
+package medical;
+
+public class Clinic {
+    int clinicDoctorsCount = 3;
+    private Doctor []doctors = new Doctor[clinicDoctorsCount];
+
+    public void insertDoctor(Doctor doctor){
+        int doctorNumber = Doctor.counter;
+        int index = doctorNumber - 1;
+        doctors[index] = doctor;
+        System.out.println("Doctor " + doctorNumber + " is added");
+    }
+
+    public void displayDoctors(String day){
+        System.out.print("Doctors working in " + day + " day are: ");
+        for(Doctor doctor : doctors){
+            if(doctor.getWorkingDay().equals(day))
+                System.out.print(doctor.getName() + " ");
+        }
+    }
+}
+```
+
+```java
+package mainpackage;
+import java.util.Scanner;
+import medical.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        Clinic clinic = new Clinic();
+
+        // Enter clinic doctors
+        int numberOfDoctors = 3;
+        System.out.println("Taking doctors data...");
+        for(int i = 1; i <= numberOfDoctors; i++){
+            System.out.print("Enter doctor " + i + " name: ");
+            String doctorName = input.next();
+
+            System.out.print("Enter doctor " + i + " working day: ");
+            String workingDay = input.next();
+
+            Doctor doctor = new Doctor(doctorName, workingDay);
+            clinic.insertDoctor(doctor);
+        }
+
+        // Search for specific doctors
+        String searchDay = "SAT";
+        clinic.displayDoctors(searchDay);
+    }
+}
 ```
