@@ -36,3 +36,51 @@ class Test{
     int number;
 }
 ```
+
+## Trace
+```java
+package mainpackage;
+
+public class Balloon {
+    private String color;
+
+    public Balloon(){
+
+    }
+
+    public Balloon(String color){
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+}
+```
+```java
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        Balloon balloon1 = new Balloon("Red");
+        Balloon balloon2 = new Balloon("Blue");
+
+        System.out.println("Balloon 1 color: " + balloon1.getColor());
+        System.out.println("Balloon 2 color: " + balloon2.getColor());
+
+        //foo(balloon2);
+        balloon2 = new Balloon();
+        System.out.println(balloon2.getColor());
+    }
+
+    public static void foo(Balloon balloon){
+        balloon.setColor("Green");
+        balloon = new Balloon("Black");
+    }
+}
+```
+
