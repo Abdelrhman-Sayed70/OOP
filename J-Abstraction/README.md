@@ -11,7 +11,7 @@
 - Allows us to build the `blueprints` of the concrete classes [children]
 - Abstract class can not be instantiated [can not define an object from it]
 - Could contain abstract methods [methods with no implementation], non-abstract (concrete) methods `[partial abstraction]`
-- Abstract method also can contain final methods and static methods
+- Abstract method also can contain `CONCRETE` final methods and `CONCRETE` static methods
 - Also it can contain constructors [Usage ?] useful for child classes
 - This class must be inherited and the children MUST implement all abstract methods [convert abstract method to concert methods].
 - So the child class now are `concrete class` [class in which all of its methods are implemented]
