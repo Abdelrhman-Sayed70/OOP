@@ -55,3 +55,40 @@ public class Main {
 - it is a class defined inside another class
 - Can not be a class with static keyword except inner [nested] class [class inside a class]
 - Increase Encapsulation concept & security 
+
+
+
+## Trace
+```java
+public class Example {
+    public int a = 10;
+    public static int b = 10;
+
+    public void instanceMethod(){
+        a += 10;
+    }
+
+    public static void staticMethod(){
+        b += 10;
+    }
+}
+```
+```java
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        Example example = new Example();
+        example.instanceMethod();
+        Example.staticMethod();
+        System.out.println(example.a); // a = 20
+        System.out.println(example.b); // b = 20
+
+        example = new Example();
+        example.instanceMethod();
+        Example.staticMethod();
+        System.out.println(example.a); // a = 20
+        System.out.println(example.b); // b = 30
+    }
+}
+```
