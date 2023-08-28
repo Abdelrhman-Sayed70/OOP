@@ -1,4 +1,5 @@
 # Static Modifier
+
 ## Static Variable [Class Variable]
 - Property will be shared for all objects
 - Stored in memory only `once` not for all objects
@@ -24,8 +25,7 @@ public class Student {
 
 ## Static Method [Class Method]
 - Called using the class name. no need for an object
-- Can access only static data
-- Can call only other static methods
+- Can access only static data and static methods
 - Can not be referred by `this` or `super` keywords 
 
   
