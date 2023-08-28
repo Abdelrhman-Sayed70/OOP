@@ -3,6 +3,7 @@
 - Property will be shared for all objects
 - Stored in memory only `once` not for all objects
 - Called using class name
+- Can be called inside static & non-static methods
 
 ### System to create a unique ID for each student
 ```java
@@ -29,21 +30,15 @@ public class Student {
 
   
 ```cpp
-package mainpackage;
-
 public class MyMath {
-
     public static int cube(int n) {
         return n * n * n;
     }
 }
 ```
 ```java
-package mainpackage;
-
 public class Main {
     public static void main(String[] args) {
-
         System.out.println(MyMath.cube(3));
     }
 }
