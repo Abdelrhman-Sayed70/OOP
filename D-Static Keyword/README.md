@@ -22,9 +22,12 @@ public class Student {
 ```
 
 ## Static Method [Class Method]
-called using the class name. no need for object
+- Called using the class name. no need for an object
+- Can access only static data
+- Can call only other static methods
+- Can not be referred by `this` or `super` keywords 
 
-
+  
 ```cpp
 package mainpackage;
 
