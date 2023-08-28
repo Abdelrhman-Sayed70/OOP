@@ -62,6 +62,9 @@ public class Balloon {
 }
 ```
 ```java
+package mainpackage;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -69,12 +72,11 @@ public class Main {
         Balloon balloon1 = new Balloon("Red");
         Balloon balloon2 = new Balloon("Blue");
 
-        System.out.println("Balloon 1 color: " + balloon1.getColor());
-        System.out.println("Balloon 2 color: " + balloon2.getColor());
+        System.out.println("Balloon 1 color: " + balloon1.getColor()); // Red
+        System.out.println("Balloon 2 color: " + balloon2.getColor()); // Blue
 
-        //foo(balloon2);
-        balloon2 = new Balloon();
-        System.out.println(balloon2.getColor());
+        foo(balloon2);
+        System.out.println(balloon2.getColor()); // Green
     }
 
     public static void foo(Balloon balloon){
