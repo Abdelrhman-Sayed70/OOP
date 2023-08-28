@@ -81,7 +81,7 @@ public class Main {
 
     public static void foo(Balloon balloon){
         balloon.setColor("Green");
-        balloon = new Balloon("Black");
+        balloon = new Balloon("Black"); // does not affect the original ballon2
     }
 }
 ```
