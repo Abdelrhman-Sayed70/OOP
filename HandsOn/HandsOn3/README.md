@@ -20,5 +20,73 @@
 
 ## Solution
 ```java
+package work;
 
+public abstract class Employee {
+    protected String name;
+    protected int paymentPerHour;
+
+    public Employee(String name, int paymentPerHour){
+        this.name = name;
+        this.paymentPerHour = paymentPerHour;
+    }
+
+    public int calculateSalary(){
+        return paymentPerHour * 8;
+    }
+}
+```
+```java
+package work;
+
+public class Contractor extends Employee{
+    private int workingHours;
+
+    public Contractor(String name, int paymentPerHour, int workingHours) {
+        super(name, paymentPerHour);
+        this.workingHours = workingHours;
+    }
+
+    @Override
+    public int calculateSalary() {
+        return workingHours * paymentPerHour;
+    }
+}
+```
+```java
+package work;
+
+public class FullTimeEmployee extends Employee{
+    private int overtime;
+
+    public FullTimeEmployee(String name, int paymentPerHour, int overtime) {
+        super(name, paymentPerHour);
+        this.overtime = overtime;
+    }
+
+    @Override
+    public int calculateSalary(){
+    return paymentPerHour * (8 + overtime);
+    }
+}
+```
+```java
+package mainpackage;
+import work.Contractor;
+import work.Employee;
+import work.FullTimeEmployee;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        Employee contractor = new Contractor("contractor", 10,5);
+        Employee fullTimeEmployee = new FullTimeEmployee("Full Time", 20, 5);
+
+        System.out.println("contractor salary: " + contractor.calculateSalary());
+        System.out.println("full time employee: " + fullTimeEmployee.calculateSalary());
+    }
+}
 ```
