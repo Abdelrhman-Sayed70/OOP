@@ -12,8 +12,8 @@
 - Abstract class can not be instantiated [can not define an object from it]
 - Could contain abstract methods [methods with no implementation], non-abstract (concrete) methods `[partial abstraction]`
 - Abstract class also can contain `concrete methods [methods with body]` final and static methods.
+- This class must be inherited and the children MUST implement all `abstract` methods [convert abstract method to concert methods].
 - Also it can contain constructors [Usage ?] useful for child classes
-- This class must be inherited and the children MUST implement all abstract methods [convert abstract method to concert methods].
 - So the child class now are `concrete class` [class in which all of its methods are implemented]
 - Non-abstract class can not have an abstract method
 - There are no abstract variables
