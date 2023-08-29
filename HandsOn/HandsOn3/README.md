@@ -9,3 +9,16 @@
 - Parametrized constructor to fill all attributes.
 - Implementation of calculateSalary function. The salary of the contractor is calculated using the following equation: paymentPerHour * WorkingHour
 
+**Create FullTimeEmployee class which is derived from Employee class. This class contains:**
+- overtime as a private integer attribute that represents additional working hours.
+- Parametrized constructor to fill all attributes.
+- Implementation of calculateSalary function. The salary of the FullTimeEmployee is calculated using the following equation: paymentPerHour * (8 + overtime).
+
+**In another package, create a class that contains the main function:**
+- Create 2 objects from Contractor class and FullEmployee class.
+-  Display the salary of every employee.
+
+## Solution
+```java
+
+```
