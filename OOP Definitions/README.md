@@ -1,14 +1,13 @@
-
 ## `Class`
 Blueprint, Prototype for any object. and the object is an instance of a class
 
 ## `Object`
 An instance is an executable copy of a class
 
-## `Data Hiding`
+# `Data Hiding`
 A technique used in OOP to hide internal object details [data members] is done using an access modifier private for class attributes 
 
-## OOP Principles
+# `OOP Principles`
 - `Encapsulation`
 - `Inheritance`
 - `Polymorphism`
@@ -26,6 +25,7 @@ One class extends the properties & methods of another class (concept of reusabil
 ## `3.Polymorphism`
 The ability of an object to take many forms (allows an object of a class to behave differently in runtime).
 
-
 ## `4.Abstraction`
 Hiding the implementation details and showing only functionality to the user.
+
+ 
