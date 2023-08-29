@@ -1,14 +1,11 @@
 # Polymorphis
-**means `many forms` achieved by using:**
+The ability of an object to take many forms (allows an object of a class to behave differently in runtime).
+
 - Method Overloading
 - Method Overriding
 
 
-# Method Overloading
-- **compile time** polymorphism [static - early binding] polymorphism
-- allows the use of the same method with different signatures [parameter list types or numbers]
-- increase the reusability of the code
-- single action in different ways
+
 
 # Method Overriding
 - **run time** polymorphism [dynamic or late binding] polymorphism
