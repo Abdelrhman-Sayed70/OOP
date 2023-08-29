@@ -16,7 +16,7 @@
 
 **In another package, create a class that contains the main function:**
 - Create 2 objects from Contractor class and FullEmployee class.
--  Display the salary of every employee.
+- Display the salary of every employee.
 
 ## Solution
 ```java
