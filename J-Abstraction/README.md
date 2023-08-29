@@ -18,8 +18,8 @@
 - Non-abstract class can not have an abstract method
 - There are no abstract variables
 - Constructor can not have abstract keyword
-- The method `CAN'T` be static and abstract at the same time, as static method can't be overridden
-- Can't add `abstract` to `private` method or class, as they will be forbidden to access them in child then we cannot override it
+- The method `CAN'T` be static and abstract at the same time, as static method can't be overridden and static is a concrete method
+- Can't add `abstract` to `private` method or class, as they will be forbidden to access them in the child then we cannot override it
 
 ```java
 public abstract class Car {
