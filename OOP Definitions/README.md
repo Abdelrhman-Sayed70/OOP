@@ -4,8 +4,6 @@ Blueprint, Prototype for any object. and the object is an instance of a class
 ## `Object`
 An instance is an executable copy of a class
 
-# `Data Hiding`
-A technique used in OOP to hide internal object details [data members] is done using an access modifier private for class attributes 
 
 # `OOP Principles`
 - `Encapsulation`
@@ -14,7 +12,7 @@ A technique used in OOP to hide internal object details [data members] is done u
 - `Abstraction`
 
 ## `1.Encapsulation`
-- Wrapping and Hiding data & methods in a single unit (class)
+- Data Hiding: Wrapping and Hiding data & methods in a single unit (class)
 - Mechanism of wrapping data (variables). done by
     - Declare class variables/attributes as `private`
     - Provide public get and set methods to `access` and `update` the value of a private variable
