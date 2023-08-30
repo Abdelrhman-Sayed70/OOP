@@ -4,8 +4,10 @@
 
 ## `Interface Methods`
 - All methods by default are `public` and `abstract`
-- `default` methods [concrete] with the default keyword
-- `static` methods [concrete]
+- `default` methods [concrete] with the default keyword -> It Can be overridden in the implementor classess
+- `static` methods [concrete] ->
+    -  Not inherited in the implementor class to avoid conflict.
+    -  Only invoked using interface name not implementor class object
 - `private` methods [concrete]
 - Method naming convention. end with `able` or start with `Can` [Movable or CanMove]
 
@@ -100,13 +102,7 @@ public class Main {
 - **By default all attributes in the interface are `public` `static` `final`**
 - So we can put all variables that can take those properties
 
-```java
-public interface AppConstants {
-    String APP_NAME = "APP";
-    String LIGHT_MODE = "#FFF";
-    String DARK_MODE = "#222";
-}
-```
+
 **But we know that interface is a contract so its better to deal in it with methods, so it's better to create class for the above constants**
 ```java
 public final class Constants {
@@ -144,10 +140,11 @@ public void defaultMethod(){
 }
 ```
 
-## 2 Interfaces Contain Methods with The Same Signature
-- **Error at implementor classes to avoid `diamond problem`**
-- class implements 2 methods with the same signature
+## 2 Interfaces Contain Abstract Methods with The Same Signature
+The implementor class will implement the function once.
 
+## 2 Interfaces Contain Default Methods with the same signature
+The implementor class must override this function
 
 ## Class Has High Priority Than Interface
 ```java
