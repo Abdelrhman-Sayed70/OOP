@@ -3,16 +3,16 @@
 - Enhance security and code privacy which the implementation can done using APIs
 
 ## `Interface Methods`
-- A list of
-     - `abstract methods` [abstract] without abstract keyword
-     - `default methods` [concrete] with default keyword
-     - `static methods` [concrete]
-     - `private methods` [concrete]
+- All methods by default are `public` and `abstract`
+- Although the interface can contain:
+     - `default` methods [concrete] with the default keyword
+     - `static` methods [concrete]
+     - `private` methods [concrete]
+
     
-- Can be used to achieve multiple inheritances in Java as a class can implement more than one interface
 - Method naming convention. end with `able` or start with `Can` [Movable or CanMove]
 
-## `Derived Class from Interface`
+## `Implementor class of the Interface`
 - Subclass must implement all Interface abstract methods and can override the default methods
 
 ## `Interface Attributes`
@@ -23,6 +23,7 @@
 
 ## `Interface`
 - Interface can extend more than one interface
+- Can be used to achieve multiple inheritances in Java as a class can implement more than one interface
 - Interface can not have any constructor
 
 
