@@ -19,6 +19,7 @@
 ## `Interface`
 - Interface can extend more than one interface
 - Can be used to achieve multiple inheritances in Java as a class can implement more than one interface
+- An interface is implicitly abstract. You do not need to use the abstract keyword while declaring an interface.
 - Interface can not have any constructor
 - Can not declare instance from interface
 - We can use upcasting
