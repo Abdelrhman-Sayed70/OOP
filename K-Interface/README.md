@@ -14,7 +14,9 @@
 - `static` and `private` methods can not be overridden
 
 ## `Interface Attributes`
-- Any defined attribute in the interface defined automatically as `public` `static` `final`
+- Any defined attribute in the interface is defined automatically as `public` `static` `final`. Must take value in the declaration
+- Why `static`? We cannot create instances from the interface, but we can call variables using the interface name
+- Why `final`? if 2 classes implement the interface and we give them the right to override the value, conflict will occur
 
 ## `Interface`
 - Interface can extend more than one interface
