@@ -70,7 +70,7 @@ Parent obj = new Child();
 ### `Usage`
 Reusability, Assume you want to create functions that accept an object of each child, you can only create one function of the parent class and pass any child of this parent
 
-
+---
 # Downcasting
 - Casting to subtype
 - Specification
