@@ -15,15 +15,14 @@
 
 ## `Interface Attributes`
 - Any defined attribute in the interface defined automatically as `public` `static` `final`
-- Any defined method in the interface defined as `public` `abstract`
-- Can not declare instance from interface
-- We can use upcasting
 
 ## `Interface`
 - Interface can extend more than one interface
 - Can be used to achieve multiple inheritances in Java as a class can implement more than one interface
 - Interface can not have any constructor
-
+- Can not declare instance from interface
+- We can use upcasting
+- Class can implement more than one interface
 
 ```java
 public interface Movable {
