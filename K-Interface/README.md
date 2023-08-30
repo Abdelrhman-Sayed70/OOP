@@ -4,16 +4,14 @@
 
 ## `Interface Methods`
 - All methods by default are `public` and `abstract`
-- Although the interface can contain:
-     - `default` methods [concrete] with the default keyword
-     - `static` methods [concrete]
-     - `private` methods [concrete]
-
-    
+- `default` methods [concrete] with the default keyword
+- `static` methods [concrete]
+- `private` methods [concrete]
 - Method naming convention. end with `able` or start with `Can` [Movable or CanMove]
 
 ## `Implementor class of the Interface`
-- Subclass must implement all Interface abstract methods and can override the default methods
+- Implementor must implement all Interface abstract methods and can override the default methods
+- `static` and `private` methods can not be overridden
 
 ## `Interface Attributes`
 - Any defined attribute in the interface defined automatically as `public` `static` `final`
