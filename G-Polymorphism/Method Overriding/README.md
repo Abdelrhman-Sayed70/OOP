@@ -62,7 +62,7 @@ public class Main {
 - Casting to supertype or Change the object type to the child class
 - Generalization
 - Always Possible
-- Object can access only `**COMMON**` attributes & methods
+- Object can access only **`COMMON`** attributes & methods
 ```java
 Parent obj = new Child();
 ```
