@@ -2,7 +2,7 @@
 - Run Time polymorphism [dynamic or late binding] polymorphism
 - Called run time as JVM doesn't know which function will invoke until creating a space in memory
 
-## Rules for method overriding
+## Rules for Method Overriding
 - There must be an inheritance relationship
 - The overridden method will be in the sub-class
 - The overridden method in the sub-class MUST have the same method signature [name & param list]
@@ -59,15 +59,29 @@ public class Main {
 
 ---
 # Upcasting
-- **Change the object type to the child class**
-- Done when method override occurs
-- Object can access COMMON attributes & methods [overridden methods] only
+- Casting to supertype or Change the object type to the child class
+- Generalization
+- Always Possible
+- Object can access only `**COMMON**` attributes & methods
+```java
+Parent obj = new Child();
+```
+
+## Usage
+Reusability, Assume you want to create functions that accept an object of each child, you can only create one function of the parent class and pass any child of this parent
+---
+
+
+
+# Downcasting
+- Casting to subtype
+- Specification
+- Not possible directly
 
 ```java
-Parent obj = new Child(); // upcasting
-obj.print(); // Child
+Child obj = new Parent(); // Compile time error
 ```
-## Usage
-Reusability, assume you want to create functions that accept an object of each child, you can only create one function of the parent class and pass any child of this parent
-
----
+```java
+Parent obj = new Child();
+Child downCasting = (Child) obj; // Ok
+```
