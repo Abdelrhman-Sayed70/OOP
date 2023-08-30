@@ -67,6 +67,37 @@ public class Main {
 Parent obj = new Child();
 ```
 
+```java
+public class Vehicle {
+    public void start(){
+        System.out.println("Vehicle");
+    }
+}
+```
+```java
+public class Car extends Vehicle{
+    @Override
+    public void start(){
+        System.out.println("Car");
+    }
+
+    public void carFun(){
+        System.out.println("Car Function");
+    }
+}
+```
+```java
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        Vehicle upCasting = new Car();
+        upCasting.start(); // Car
+        upCasting.carFun(); // Compile Time Error
+    }
+}
+```
+
 ### `Usage`
 Reusability, Assume you want to create functions that accept an object of each child, you can only create one function of the parent class and pass any child of this parent
 
