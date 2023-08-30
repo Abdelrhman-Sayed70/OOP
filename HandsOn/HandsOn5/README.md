@@ -1,4 +1,4 @@
-# HAndsOn5
+# HandsOn5
 
 Create an interface (Called Measurable) that has a constant float attribute PI = 3.14 and two 
 methods float getArea() and void show() to display the value of the area to the user (use 
