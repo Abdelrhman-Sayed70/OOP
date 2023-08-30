@@ -67,21 +67,20 @@ public class Main {
 Parent obj = new Child();
 ```
 
-## Usage
+### `Usage`
 Reusability, Assume you want to create functions that accept an object of each child, you can only create one function of the parent class and pass any child of this parent
----
-
 
 
 # Downcasting
 - Casting to subtype
 - Specification
 - Not possible directly
+- Can be applied using upcasting and downcasting
 
 ```java
 Child obj = new Parent(); // Compile time error
 ```
 ```java
-Parent obj = new Child();
-Child downCasting = (Child) obj; // Ok
+Parent upCasting = new Child();
+Child downCasting = (Child) upCasting; // Ok
 ```
