@@ -1,16 +1,30 @@
 # Interface
 - **`Contract`**
-- A list of method signatures (abstract methods) without abstract keyword, default methods [concrete], static methods [concret], private [concrete]
 - Enhance security and code privacy which the implementation can done using APIs
-- Class implements all Interface abstract methods
-- Interface can extend more than one Interface
+
+## `Interface Methods`
+- A list of
+     - `abstract methods` [abstract] without abstract keyword
+     - `default methods` [concrete] with default keyword
+     - `static methods` [concrete]
+     - `private methods` [concrete]
+    
 - Can be used to achieve multiple inheritances in Java as a class can implement more than one interface
-- Naming Convention. end with `able` or start with `Can` [Movable or CanMove]
+- Method naming convention. end with `able` or start with `Can` [Movable or CanMove]
+
+## `Derived Class from Interface`
+- Subclass must implement all Interface abstract methods and can override the default methods
+
+## `Interface Attributes`
 - Any defined attribute in the interface defined automatically as `public` `static` `final`
 - Any defined method in the interface defined as `public` `abstract`
-- Interface can not have any constructor
 - Can not declare instance from interface
 - We can use upcasting
+
+## `Interface`
+- Interface can extend more than one interface
+- Interface can not have any constructor
+
 
 ```java
 public interface Movable {
