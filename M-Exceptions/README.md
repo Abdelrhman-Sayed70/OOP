@@ -34,3 +34,5 @@ rest of code
 - Used to clean up code such as closing file such as closing files or closing connection
 - Get executed whether the exception occurred or not
 - For each `try` block there can be 0 or more `catch` blocks but only one `finally` block
+- Finally block will be executed even return is called
+- Can't be executed if the program exits [by calling `System.exit()` or by causing `fetal error`]
