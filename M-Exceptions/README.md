@@ -6,20 +6,8 @@
 - `try` block that contains the code that can throw an exception
 - `catch` block which contains an Exception object and catch block. this block will be executed if the try block throws the mentioned exception in the catch object
 - The `Exception` class is the parent of all exception classes
-
-
-```java
-int []arr = new int[2];
-try{
-    System.out.println(arr[3]);
-}
-catch (Exception e){
-    System.out.println(e);
-}
-```
-
-**If the exception is the same as in catch, it will be handled and the try block will not be executed and the rest of the code will be done**
-
+- **If the exception is the same as in catch, it will be handled and the try block will not be executed and the rest of the code will be done**
+- It can contain multiple catch statements
 ```java
 int []arr = new int[2];
 try {
@@ -41,3 +29,8 @@ rest of catch
 rest of code
 0
 ```
+
+# Finally
+- Used to clean up code such as closing file such as closing files or closing connection
+- Get executed whether the exception occurred or not
+- For each `try` block there can be 0 or more `catch` blocks but only one `finally` block
