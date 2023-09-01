@@ -3,9 +3,9 @@
 - `Exceptions` **unwanted or unexpected** event, that occurs during the program execution i.e. run time. Solved using programmer
 
 # Try-Catch
-- `try` block that contains the code that can throw an axception
+- `try` block that contains the code that can throw an exception
 - `catch` block which contains an Exception object and catch block. this block will be executed if the try block throws the mentioned exception in the catch object
-
+- `The Exception` class is the parent of all exception classess
 
 
 ```java
