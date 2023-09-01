@@ -2,6 +2,12 @@
 - `Error` Represents serious problems and hard to solve, like library incompatibility, infinite recursion, memory leak
 - `Exceptions` **unwanted or unexpected** event, that occurs during the program execution i.e. run time. Solved using programmer
 
+# Try-Catch
+- `try` block that contains the code that can throw an axception
+- `catch` block which contains an Exception object and catch block. this block will be executed if the try block throws the mentioned exception in the catch object
+
+
+
 ```java
 int []arr = new int[2];
 try{
